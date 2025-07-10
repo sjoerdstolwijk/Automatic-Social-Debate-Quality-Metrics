@@ -1,0 +1,115 @@
+# origin
+This is a duplicate of the privat repository https://github.com/annekroon/publicsphere/ which is cleaned in terms of privacy sensitive data.
+The work in writing the code for this repository was done by Wang Ngai (Justin) Yeung https://github.com/aryaliaoyf, Yufang (Arya) Liao https://github.com/jyeungtin and Anne Kroon https://github.com/annekroon
+
+# publicsphere
+This project studies the deliberative quality of social media debates surrounding satire and traditional news.
+
+You can replicate the result by running corresponding scripts if you have access to the original texts [not shared here out of privacy concerns]. 
+
+## 0. Data & Preprocessing
+### Raw data
+The raw data includes:
+- comments scraped from Twitter and Youtube
+- manual coding results after fixing mistakes
+
+### Final dataset 
+Final datasets used for all measures and analyses are in the *data* folder, including:
+- **full_data.csv**: N = 3862
+- **train.csv** and **test.csv**: split from full_data.csv with a ratio of 0.2
+
+Each file includes: comments, meta information of comments, manual coding results, and aggregated manual coding. 
+
+The three files could be reprocuded by running *0. Preprocessing*
+
+
+## 1. Rule-based approaches
+This section includes all scripts used for conducting rule-based measures.
+
+**Data**: *full_data.csv*
+
+**Outputs**: see *outputs/automated_results/*
+  
+### 1.1 Dictionaries
+- Incivility: six dictioanries
+- Diversity: MFD 1.0 and MFD 2.0
+
+### 1.2 Rationality
+- FK score
+- Fake resource
+
+### 1.3 Interactivity
+- @ mention
+
+### 1.4 eMFD
+- Extended Moral Foundations Dictionary (eMFD, Hopp et al., 2020) 
+  
+### 1.5 Integrative complexity
+- Integrative complexity score (Owens and Wedeking, 2011)
+  
+### 1.6 Formality (POS)
+- Formality score (Heylighen and Dewaele, 2002)
+  
+## 2. Supervised machine learning
+This section is the script used for conducting supervised machine learning.
+
+**Data**: *train.csv* & *test.csv*
+
+**Outputs**: see *outputs/automated_results/prediction_ML.csv* 
+
+## 3. Combine all analyses
+Here, the results of all analyses above are merged together. The new dataset will be used for comparison and evaluation.
+
+**Data**: files in outputs/automated_results/
+
+**Outputs**: data/Data_combination_test.csv
+
+## 4. Evaluation
+This section includes main evaluation and comparison presented in the paper, including correlation and precision, recall, and F1 score.
+
+**Data**: Data_combination_test.csv 
+
+**Outputs**: outputs/
+
+### Precision, Recall, F1 score
+e.g.,
+<img width="462" alt="截屏2023-08-08 20 36 11" src="https://github.com/annekroon/publicsphere/assets/105493457/a9ac893a-4f5a-4de0-9bba-1f079ecbbb7c">
+
+### Correlation
+e.g., 
+![Correlations: all measures in Incivility](https://github.com/annekroon/publicsphere/assets/105493457/ee078555-4d4a-481c-879e-2c27db7f0a7a)
+
+## 5. Improvements
+This section includes all exploratory analyses and improvements for automated measures. 
+
+### 5.1 Dictionaries as input for machine learning
+**Data**: *train.csv* & *test.csv*
+
+**Outputs**: 
+
+### 5.2 Merging dictionaries (at_least_one & majority_vote)
+**Data**: Data_combination_test.csv
+
+**Outputs**: 
+
+visualization bar tables: 
+    ![Merging dictionaries   class 1 (all)](https://github.com/annekroon/publicsphere/assets/105493457/e3de936d-5230-4301-af98-5064e37f9a3f)
+    
+### 5.3 Distributed Dictionaries Representation (DDR) method
+**Data**: *test.csv*
+
+**Outputs**: 
+<img width="670" alt="截屏2023-08-08 20 38 34" src="https://github.com/annekroon/publicsphere/assets/105493457/5da1f541-d595-4fb2-90b7-11da2b5e1b10">
+
+
+### Sampling test
+Please find all data and plots in the Monte Carlo folder. Script is in the root. 
+
+### Threshold test
+**Data**: *Data_combination_test.csv*
+
+**Output**: Find results in the notebook
+  
+### Additional dataset
+**Output**: Find results in the notebook
+
