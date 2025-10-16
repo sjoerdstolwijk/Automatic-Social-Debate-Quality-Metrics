@@ -7,7 +7,7 @@ This repository provides the code used for the analysis in:
 "Can we Use Automated Approaches to Measure the Quality of Online Political Discussion?  How to (Not) Measure Interactivity, Diversity, Rationality, and Incivility in Online Comments to the News" by Sjoerd B. Stolwijk, Mark Boukes, Wang Ngai Yeung, Yufang Liao, Simon Münker, Anne C. Kroon, Damian Trilling
 Department of Communication Science, University of Amsterdam 
 Department of Computational Linguistics, University of Trier
-
+https://www.tandfonline.com/doi/full/10.1080/19312458.2025.2553300
 
 # publicsphere
 This project studies the deliberative quality of social media debates surrounding satire and traditional news.
