@@ -1,13 +1,23 @@
 # origin
 This is a duplicate of the privat repository https://github.com/annekroon/publicsphere/ which is cleaned in terms of privacy sensitive data.
 
-The work in writing the code for this repository was done by Wang Ngai (Justin) Yeung https://github.com/jyeungtin, Yufang (Arya) Liao  https://github.com/aryaliaoyf and Anne Kroon https://github.com/annekroon.
+The work in writing the code for this repository was done by Wang Ngai (Justin) Yeung https://github.com/jyeungtin, Yufang (Arya) Liao  https://github.com/aryaliaoyf and Anne Kroon https://github.com/annekroon. 
+
+Also see the code written by Sjoerd Stolwijk at https://github.com/cl-trier/TWON-Exploration/blob/master/27--Classify%20PublicSphere-paper_2024.ipynb which was used for the GLLM part of the paper accompanying this repo.
 
 This repository provides the code used for the analysis in:
 "Can we Use Automated Approaches to Measure the Quality of Online Political Discussion?  How to (Not) Measure Interactivity, Diversity, Rationality, and Incivility in Online Comments to the News" by Sjoerd B. Stolwijk, Mark Boukes, Wang Ngai Yeung, Yufang Liao, Simon Münker, Anne C. Kroon, Damian Trilling
 Department of Communication Science, University of Amsterdam 
 Department of Computational Linguistics, University of Trier
 
+Please cite our paper if you use this repository:
+Stolwijk, S. B., Boukes, M., Yeung, W. N., Liao, Y., Münker, S., Kroon, A. C., & Trilling, D. (2026). Can we use automated approaches to measure the quality of online political discussion? How to (not) measure interactivity, diversity, rationality, and incivility in online comments to the news. Communication Methods and Measures, 20(1), 1–25. https://doi.org/10.1080/19312458.2025.2553300
+
+The citation is also available in [CITATION.cff](CITATION.cff); on GitHub, use the "Cite this repository" button in the sidebar to copy it in APA or BibTeX format.
+
+The codebook used for the manual annotation baseline for the analysis in this repo can be found at: https://osf.io/cajqm/files/2g7ex.
+
+UPDATE 2026: We have released newly trained versions of our transformer models on huggingface, see below for more information.
 
 # publicsphere
 This project studies the deliberative quality of social media debates surrounding satire and traditional news.
@@ -21,13 +31,15 @@ The raw data includes:
 - manual coding results after fixing mistakes
 
 ### Final dataset 
-Final datasets used for all measures and analyses are in the *data* folder, including:
+Final datasets used for all measures and analyses should be placed in the *data* folder, including:
 - **full_data.csv**: N = 3862
 - **train.csv** and **test.csv**: split from full_data.csv with a ratio of 0.2
 
 Each file includes: comments, meta information of comments, manual coding results, and aggregated manual coding. 
 
 The three files could be reprocuded by running *0. Preprocessing*
+
+Note that for GDPR and ethics reasons the full data is only available for research purposes on request.
 
 
 ## 1. Rule-based approaches
@@ -119,4 +131,7 @@ Please find all data and plots in the Monte Carlo folder. Script is in the root.
   
 ### Additional dataset
 **Output**: Find results in the notebook
+
+### UPDATE 2026 - BERT model release:
+We have used our manual coded data to retrain a set of BERT_base_uncased transformer models for seven concepts included in our manual coded baseline: Conservative, Liberal, Has Opinion, Hatelist-focussed, Incivility, Interactivity and Rationality. The "BERT_model_release_2026" folder contains the code used for training and evaluating these models as well as a report of their performance against the test set. For more information on the manual annotations underlying these models see: https://osf.io/cajqm/files/2g7ex
 

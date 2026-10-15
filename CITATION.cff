@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the paper below."
+title: "Automatic Social Debate Quality Metrics"
+type: software
+license: MIT
+repository-code: "https://github.com/sjoerdstolwijk/Automatic-Social-Debate-Quality-Metrics"
+authors:
+  - family-names: Stolwijk
+    given-names: Sjoerd B.
+  - family-names: Boukes
+    given-names: Mark
+  - family-names: Yeung
+    given-names: Wang Ngai
+  - family-names: Liao
+    given-names: Yufang
+  - family-names: Münker
+    given-names: Simon
+  - family-names: Kroon
+    given-names: Anne C.
+  - family-names: Trilling
+    given-names: Damian
+preferred-citation:
+  type: article
+  title: "Can we use automated approaches to measure the quality of online political discussion? How to (not) measure interactivity, diversity, rationality, and incivility in online comments to the news"
+  authors:
+    - family-names: Stolwijk
+      given-names: Sjoerd B.
+    - family-names: Boukes
+      given-names: Mark
+    - family-names: Yeung
+      given-names: Wang Ngai
+    - family-names: Liao
+      given-names: Yufang
+    - family-names: Münker
+      given-names: Simon
+    - family-names: Kroon
+      given-names: Anne C.
+    - family-names: Trilling
+      given-names: Damian
+  journal: "Communication Methods and Measures"
+  year: 2026
+  volume: 20
+  issue: 1
+  start: 1
+  end: 25
+  doi: "10.1080/19312458.2025.2553300"
