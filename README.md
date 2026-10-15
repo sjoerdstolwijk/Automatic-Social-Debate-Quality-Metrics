@@ -9,6 +9,7 @@ This repository provides the code used for the analysis in:
 "Can we Use Automated Approaches to Measure the Quality of Online Political Discussion?  How to (Not) Measure Interactivity, Diversity, Rationality, and Incivility in Online Comments to the News" by Sjoerd B. Stolwijk, Mark Boukes, Wang Ngai Yeung, Yufang Liao, Simon Münker, Anne C. Kroon, Damian Trilling
 Department of Communication Science, University of Amsterdam 
 Department of Computational Linguistics, University of Trier
+https://www.tandfonline.com/doi/full/10.1080/19312458.2025.2553300
 
 Please cite our paper if you use this repository:
 Stolwijk, S. B., Boukes, M., Yeung, W. N., Liao, Y., Münker, S., Kroon, A. C., & Trilling, D. (2026). Can we use automated approaches to measure the quality of online political discussion? How to (not) measure interactivity, diversity, rationality, and incivility in online comments to the news. Communication Methods and Measures, 20(1), 1–25. https://doi.org/10.1080/19312458.2025.2553300
@@ -18,6 +19,7 @@ The citation is also available in [CITATION.cff](CITATION.cff); on GitHub, use t
 The codebook used for the manual annotation baseline for the analysis in this repo can be found at: https://osf.io/cajqm/files/2g7ex.
 
 UPDATE 2026: We have released newly trained versions of our transformer models on huggingface, see below for more information.
+
 
 # publicsphere
 This project studies the deliberative quality of social media debates surrounding satire and traditional news.
