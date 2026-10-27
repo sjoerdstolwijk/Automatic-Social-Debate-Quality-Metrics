@@ -173,3 +173,5 @@ TSWLatexianTemp*
 
 #old environment
 .idea/
+
+BERT_model_release_2026/models/*/

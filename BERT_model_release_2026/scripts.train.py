@@ -75,7 +75,7 @@ def compute_metrics(outputs):
     predictions = numpy.argmax(predictions, axis=1)
 
     return classification_report(
-        predictions, labels,
+        labels, predictions,
         output_dict=True, zero_division=1.
     )
 

@@ -67,7 +67,7 @@ def get_class_report(CONCEPT):
     pipe = TextClassificationPipeline(model=model, tokenizer=tokenizer, return_all_scores=True, device=0)
 
     predicted_test_scores = pipe(list(test_texts), truncation=True)
-    predicted_test_labels = [int(prediction['label'].split('_')[-1]) for prediction in predicted_test_scores]
+    predicted_test_labels = [model.config.label2id[prediction['label']] for prediction in predicted_test_scores]
 
     print(classification_report(test_labels, predicted_test_labels))    
 

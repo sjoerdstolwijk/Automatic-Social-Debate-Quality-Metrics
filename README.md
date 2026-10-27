@@ -131,3 +131,9 @@ Please find all data and plots in the Monte Carlo folder. Script is in the root.
 ### UPDATE 2026 - BERT model release:
 We have used our manual coded data to retrain a set of BERT_base_uncased transformer models for seven concepts included in our manual coded baseline: Conservative, Liberal, Has Opinion, Hatelist-focussed, Incivility, Interactivity and Rationality. The "BERT_model_release_2026" folder contains the code used for training and evaluating these models as well as a report of their performance against the test set. For more information on the manual annotations underlying these models see: https://osf.io/cajqm/files/2g7ex
 
+## AI notice
+Claude Opus 5.5 (`claude-opus-5-5`) was used to help with the 2026 BERT model release:
+- the Hugging Face upload notebook (`BERT_model_release_2026/models/huggingface.ipynb`), the model cards and the readable labels in each model's config;
+- two fixes in the training and evaluation scripts: the argument order of `classification_report` in `scripts.train.py`, and the label lookup in `scripts.evaluate.py`.
+
+The models were trained, and the original analyses written, without AI assistance.
