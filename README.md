@@ -12,7 +12,7 @@ The citation is also available in [CITATION.cff](CITATION.cff); on GitHub, use t
 
 The codebook used for the manual annotation baseline for the analysis in this repo can be found at: https://osf.io/cajqm/files/2g7ex.
 
-UPDATE 2026: We have released newly trained versions of our transformer models on huggingface, see below for more information.
+UPDATE 2026: We have released newly trained versions of our transformer models on Hugging Face, collected in [CMM-2025-debate-quality](https://huggingface.co/collections/sjoerdstolwijk/cmm-2025-debate-quality-6ae1fd391952bf9b019e0af8); see below for more information.
 
 
 # publicsphere
@@ -130,6 +130,18 @@ Please find all data and plots in the Monte Carlo folder. Script is in the root.
 
 ### UPDATE 2026 - BERT model release:
 We have used our manual coded data to retrain a set of BERT_base_uncased transformer models for seven concepts included in our manual coded baseline: Conservative, Liberal, Has Opinion, Hatelist-focussed, Incivility, Interactivity and Rationality. The "BERT_model_release_2026" folder contains the code used for training and evaluating these models as well as a report of their performance against the test set. For more information on the manual annotations underlying these models see: https://osf.io/cajqm/files/2g7ex
+
+The models are available on Hugging Face in the [CMM-2025-debate-quality](https://huggingface.co/collections/sjoerdstolwijk/cmm-2025-debate-quality-6ae1fd391952bf9b019e0af8) collection:
+
+| Concept | Model |
+|---|---|
+| Conservative | [bert-base-uncased-CMM-2025-debate-quality-Conservative](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Conservative) |
+| Liberal | [bert-base-uncased-CMM-2025-debate-quality-Liberal](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Liberal) |
+| Incivility | [bert-base-uncased-CMM-2025-debate-quality-Incivility](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Incivility) |
+| Interactivity | [bert-base-uncased-CMM-2025-debate-quality-Interactivity](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Interactivity) |
+| Rationality | [bert-base-uncased-CMM-2025-debate-quality-Rationality](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Rationality) |
+| Has-Opinion | [bert-base-uncased-CMM-2025-debate-quality-Has-Opinion](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Has-Opinion) |
+| Hatelist-Focused | [bert-base-uncased-CMM-2025-debate-quality-Hatelist-Focused](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Hatelist-Focused) |
 
 ## AI notice
 Claude Opus 5.5 (`claude-opus-5-5`) was used to help with the 2026 BERT model release:
