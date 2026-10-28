@@ -133,15 +133,15 @@ We have used our manual coded data to retrain a set of BERT_base_uncased transfo
 
 The models are available on Hugging Face in the [CMM-2025-debate-quality](https://huggingface.co/collections/sjoerdstolwijk/cmm-2025-debate-quality-6ae1fd391952bf9b019e0af8) collection:
 
-| Concept | Model |
-|---|---|
-| Conservative | [bert-base-uncased-CMM-2025-debate-quality-Conservative](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Conservative) |
-| Liberal | [bert-base-uncased-CMM-2025-debate-quality-Liberal](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Liberal) |
-| Incivility | [bert-base-uncased-CMM-2025-debate-quality-Incivility](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Incivility) |
-| Interactivity | [bert-base-uncased-CMM-2025-debate-quality-Interactivity](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Interactivity) |
-| Rationality | [bert-base-uncased-CMM-2025-debate-quality-Rationality](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Rationality) |
-| Has-Opinion | [bert-base-uncased-CMM-2025-debate-quality-Has-Opinion](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Has-Opinion) |
-| Hatelist-Focused | [bert-base-uncased-CMM-2025-debate-quality-Hatelist-Focused](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Hatelist-Focused) |
+| Concept | Model | DOI |
+|---|---|---|
+| Conservative | [bert-base-uncased-CMM-2025-debate-quality-Conservative](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Conservative) | [10.57967/hf/11300](https://doi.org/10.57967/hf/11300) |
+| Liberal | [bert-base-uncased-CMM-2025-debate-quality-Liberal](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Liberal) | [10.57967/hf/11301](https://doi.org/10.57967/hf/11301) |
+| Incivility | [bert-base-uncased-CMM-2025-debate-quality-Incivility](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Incivility) | [10.57967/hf/11302](https://doi.org/10.57967/hf/11302) |
+| Interactivity | [bert-base-uncased-CMM-2025-debate-quality-Interactivity](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Interactivity) | [10.57967/hf/11303](https://doi.org/10.57967/hf/11303) |
+| Rationality | [bert-base-uncased-CMM-2025-debate-quality-Rationality](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Rationality) | [10.57967/hf/11304](https://doi.org/10.57967/hf/11304) |
+| Has-Opinion | [bert-base-uncased-CMM-2025-debate-quality-Has-Opinion](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Has-Opinion) | [10.57967/hf/11305](https://doi.org/10.57967/hf/11305) |
+| Hatelist-Focused | [bert-base-uncased-CMM-2025-debate-quality-Hatelist-Focused](https://huggingface.co/sjoerdstolwijk/bert-base-uncased-CMM-2025-debate-quality-Hatelist-Focused) | [10.57967/hf/11306](https://doi.org/10.57967/hf/11306) |
 
 ## AI notice
 Claude Opus 5.5 (`claude-opus-5-5`) was used to help with the 2026 BERT model release:
