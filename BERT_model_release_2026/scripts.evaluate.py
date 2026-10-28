@@ -98,5 +98,5 @@ for label in measure_variables:
     # all_test_dfs.append(test_df[['commentText', 'ID', 'Text', "label[1]"]])
     
 performance_df = pd.DataFrame(performance)
-performance_df.to_csv("models_og_script_retrained.csv")
+performance_df.to_csv("models_og_script_retrained_w_fix.csv")
 print(performance_df)

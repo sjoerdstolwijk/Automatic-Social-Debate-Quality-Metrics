@@ -107,4 +107,4 @@ for tgt_annotator_column in TGT_COLUMNS:
     trainer.save_model(f"models/{tgt_annotator_column}")
 
 
-json.dump(results, open("./data/new_train.results.json", "w"), indent=4)
+json.dump(results, open("./data/new_train.results.w_fix.json", "w"), indent=4)
